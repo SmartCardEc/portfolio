@@ -1,6 +1,6 @@
 export const navLinks = [
   {
-    label: 'Projects',
+    label: 'Services',
     pathname: '/#project-1',
   },
   {
@@ -11,26 +11,26 @@ export const navLinks = [
     label: 'Articles',
     pathname: '/articles',
   },
-  {
-    label: 'Contact',
-    pathname: '/contact',
-  },
+  // {
+  //   label: 'Contact',
+  //   pathname: '/contact',
+  // },
 ];
 
 export const socialLinks = [
-  {
-    label: 'Twitter',
-    url: 'https://twitter.com/hamishMW',
-    icon: 'twitter',
-  },
-  {
-    label: 'Figma',
-    url: 'https://www.figma.com/@Hamish',
-    icon: 'figma',
-  },
-  {
-    label: 'Github',
-    url: 'https://github.com/HamishMW',
-    icon: 'github',
-  },
+  // {
+  //   label: 'Twitter',
+  //   url: 'https://twitter.com/hamishMW',
+  //   icon: 'twitter',
+  // },
+  // {
+  //   label: 'Figma',
+  //   url: 'https://www.figma.com/@Hamish',
+  //   icon: 'figma',
+  // },
+  // {
+  //   label: 'Github',
+  //   url: 'https://github.com/HamishMW',
+  //   icon: 'github',
+  // },
 ];

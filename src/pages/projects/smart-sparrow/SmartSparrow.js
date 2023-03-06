@@ -70,14 +70,14 @@ import styles from './SmartSparrow.module.css';
 const Earth = dynamic(() => import('./Earth').then(mod => mod.Earth));
 const EarthSection = dynamic(() => import('./Earth').then(mod => mod.EarthSection));
 
-const title = 'Designing the future of education';
+const title = 'Dashboard Building and Data Analytics: The Definitive Guide';
 const description =
-  'I worked as the design lead on a major iteration of Smart Sparrow’s product. We took the platform in a bold new direction, focusing on becoming the best tool for learning designers.';
+  'In the information age, data is more valuable than ever. Companies around the world are investing in dashboard building and data analytics to gain valuable insights into their operations, customers, and competitors. In this article, we will discuss how to build an effective dashboard and how data analytics can help companies make informed decisions.';
 const roles = [
-  'Art Direction',
-  'UX and UI Design',
-  'Front End Development',
-  'Motion Design',
+  'We transform your data into valuable information for your business.',
+  'Customized data analysis solutions for every need.',
+  'Get valuable information for informed decision making.',
+  'Data analytics experts with proven experience.',
 ];
 
 export const SmartSparrow = () => {
@@ -104,7 +104,7 @@ export const SmartSparrow = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.smartsparrow.com/"
+          // url="https://www.smartsparrow.com/"
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -123,27 +123,26 @@ export const SmartSparrow = () => {
                   : imageSprLessonBuilderLightPlaceholder
               }
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
+              alt="We transform data into strategic decisions"
             />
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection>
           <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionHeading>What is a Dashboard?</ProjectSectionHeading>
             <ProjectSectionText>
-              In 2017, Smart Sparrow began a project to build an entirely new platform to
-              from the ground up to serve as the most powerful tool for educators to
-              create online learning experiences. The old platform was built in Flash, and
-              there were a number of user experience problems to solve in the process of
-              moving the platform to Javascript. The primary goals for the project were
-              reducing barriers to collaboration, and making the platform both easier for
-              new users, but with plenty of room to scale for advanced users.
+            In simple terms, a dashboard is a tool that allows users to visualize and analyze data 
+            in an easy and accessible way. An effective dashboard should provide a complete view of 
+            enterprise data in real time, with the ability to drill down into specific details as needed.
+            Building an effective dashboard begins with careful planning. Before beginning, it is important to 
+            identify the goals and needs of the business. What information is most important to the business? 
+            What key metrics should be tracked? These questions should be answered before starting to build a dashboard.
             </ProjectSectionText>
           </ProjectTextRow>
         </ProjectSection>
         <ProjectSection light={isDark}>
           <ProjectSectionContent>
-            <Image
+            {/* <Image
               key={themeId}
               srcSet={
                 isDark
@@ -157,24 +156,36 @@ export const SmartSparrow = () => {
               }
               alt={`A set of ${themeId} themed components for the aero design system`}
               sizes="100vw"
-            />
+            /> */}
             <ProjectTextRow>
-              <SegmentedControl
+              {/* <SegmentedControl
                 currentIndex={themes.indexOf(themeId)}
                 onChange={handleThemeChange}
               >
                 <SegmentedControlOption>Dark theme</SegmentedControlOption>
                 <SegmentedControlOption>Light theme</SegmentedControlOption>
-              </SegmentedControl>
+              </SegmentedControl> */}
             </ProjectTextRow>
             <ProjectTextRow>
-              <ProjectSectionHeading>The aero design system</ProjectSectionHeading>
+              <ProjectSectionHeading>How to build an effective dashboard:</ProjectSectionHeading>
               <ProjectSectionText>
-                To streamline the design process across designers and engineers for such a
-                large project, it was important to lay the foundations with a strong,
-                flexible design system that could evolve during the product’s development
-                cycle. This would inform both the aesthetics and user experience across
-                the product itself as well as the website and marketing material.
+              Once the business objectives and needs have been identified, it's time to start building the dashboard. 
+              There are several key considerations to keep in mind when building an effective dashboard, as detailed below:              
+              </ProjectSectionText>
+              <ProjectSectionText>
+              1. Tool selection: There are many tools for building dashboards, such as Tableau, PowerBI and Google Data Studio. It is important to choose the right tool for the company's needs. Each tool has its advantages and disadvantages, so it is important to compare several options before making a decision.             
+              </ProjectSectionText>
+              <ProjectSectionText>
+              2. Selection of data sources: Dashboards are only as good as the data that feeds them. It is important to select the right data sources to ensure that the data is accurate and relevant. Data sources can include databases, spreadsheets, text files and more.
+              </ProjectSectionText>
+              <ProjectSectionText>
+              3. Visual design: The visual design of a dashboard is essential to its effectiveness. Visual elements should be easy to understand and appealing to the eye. It is important to choose colors, fonts and layouts that best suit the company's brand.
+              </ProjectSectionText>
+              <ProjectSectionText>
+              4. Selecting key metrics: Key metrics are the indicators that help the company measure progress toward its goals. It is important to select the right metrics for the dashboard and make sure they are easy to understand.
+              </ProjectSectionText>
+              <ProjectSectionText>
+              5. Continuous updating: A dashboard must be continuously updated to maintain the accuracy and relevance of the data. It is important to establish a regular update process to ensure that the data is always up to date.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
@@ -194,10 +205,10 @@ export const SmartSparrow = () => {
                   ? imageSprDesignSystemDarkPlaceholder
                   : imageSprDesignSystemLightPlaceholder
               }
-              alt="The homepage of the aero design system docs website linking to principles and components."
+              alt="Visualize your data in a new and powerful way."
               sizes="100vw"
             />
-            <ProjectTextRow>
+            {/* <ProjectTextRow>
               <ProjectSectionHeading>Design system docs</ProjectSectionHeading>
               <ProjectSectionText>
                 A design system is useless if no one knows how to use it, so we put
@@ -205,7 +216,7 @@ export const SmartSparrow = () => {
                 accessibility, and component guidelines for designers and engineers
                 working with the system.
               </ProjectSectionText>
-            </ProjectTextRow>
+            </ProjectTextRow> */}
           </ProjectSectionContent>
         </ProjectSection>
         <ThemeProvider themeId="dark" data-invert>
@@ -215,7 +226,7 @@ export const SmartSparrow = () => {
               <Image
                 srcSet={[imageSprBackgroundVolcanism, imageSprBackgroundVolcanismLarge]}
                 placeholder={imageSprBackgroundVolcanismPlaceholder}
-                alt="A dramatic ocean scene with lava forming a new land mass."
+                alt="Get meaningful insights from your data with ease."
                 sizes="100vw"
               />
             }
@@ -223,12 +234,16 @@ export const SmartSparrow = () => {
             <ProjectSectionColumns width="full">
               <ProjectSectionContent width="full">
                 <ProjectTextRow width="s">
-                  <ProjectSectionHeading>Motion design</ProjectSectionHeading>
+                  <ProjectSectionHeading>Data Analytics and its role in the construction of Dashboards:</ProjectSectionHeading>
                   <ProjectSectionText>
-                    Animation was a core principle in making the authoring experience a
-                    more understandable process. Elements animate in ways that indicate
-                    the cause and effect of each interaction to improve the fluidity of
-                    the overall experience.
+                  Data analytics is the process of examining and analyzing large data sets to gain valuable insights. Data analytics 
+                  is essential for building effective dashboards, 
+                  as it helps companies better understand data and make informed decisions.
+                  </ProjectSectionText>
+                  <ProjectSectionText>
+                  Data analytics can also be useful in identifying trends and patterns in data, allowing companies to anticipate and respond to changes
+                  in the marketplace. Some of the most common data analytics techniques include trend analysis, correlation analysis, regression analysis
+                  and cluster analysis.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </ProjectSectionContent>
@@ -240,7 +255,7 @@ export const SmartSparrow = () => {
                   { src: videoSprMotionLarge, width: 2560 },
                 ]}
                 placeholder={videoSprMotionPlaceholder}
-                alt="A learning designer building and deploying an interactive lesson on volcanism using the app."
+                alt="Smart data analysis, clear answers."
                 sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
               />
             </ProjectSectionColumns>
@@ -248,14 +263,21 @@ export const SmartSparrow = () => {
         </ThemeProvider>
         <ProjectSection>
           <ProjectSectionContent>
-            <ProjectTextRow>
-              <ProjectSectionHeading>Encouraging adaptivity</ProjectSectionHeading>
+            <ProjectTextRow>              
               <ProjectSectionText>
-                A major part of solving for collaboration was being able to visualize the
-                learner experience in the editor. This was especially beneficial for
-                subject matter experts and instructors need to review and give feedback on
-                the higher level structure without having to dig through all of the
-                adaptivity scenarios screen by screen.
+              Trend analysis involves identifying patterns in data over time. This can help companies identify changes in market demand, buying trends and customer behaviors.
+              </ProjectSectionText>
+              <ProjectSectionText>
+              Correlation analysis involves identifying relationships between two or more variables. This can help companies understand how changes in one variable can affect other variables.
+              </ProjectSectionText>          
+              <ProjectSectionText>
+              Regression analysis involves identifying the relationship between a dependent variable and one or more independent variables. This can help companies predict how changes in one variable may affect the dependent variable. 
+              </ProjectSectionText>
+              <ProjectSectionText>
+              Cluster analysis involves identifying groups of similar data. This can help companies segment their customers into groups based on buying patterns or preferences.
+              </ProjectSectionText>
+              <ProjectSectionText>
+              By using data analysis techniques such as these, companies can gain a deeper understanding of their data and make better data-driven business decisions.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -271,61 +293,13 @@ export const SmartSparrow = () => {
                   ? imageSprStoryboarderDarkPlaceholder
                   : imageSprStoryboarderLightPlaceholder
               }
-              alt="A drag and drop storyboard style editor for creating an adaptive lesson."
+              alt="Unlock the hidden potential of your data."
               sizes={`(max-width: ${media.mobile}px) 100vw, 80vw`}
             />
           </ProjectSectionContent>
         </ProjectSection>
-        <ProjectSection>
-          <ProjectSectionColumns>
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>
-                  An extensible plugin ecosystem usable by everyone
-                </ProjectSectionHeading>
-                <ProjectSectionText>
-                  The most powerful aspect of the platform is the ability to create custom
-                  plugins for any content, whether it be a degree, course, lesson, screen,
-                  or interactive component. Out of the box these can be made configurable
-                  with minimal effort from developers. Learning designers can then edit
-                  everything using a common configuration interface.
-                </ProjectSectionText>
-              </ProjectTextRow>
-            </ProjectSectionContent>
-            <div className={styles.sidebarImages}>
-              <Image
-                className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? [imageSprSchema2Dark, imageSprSchema2DarkLarge]
-                    : [imageSprSchema2Light, imageSprSchema2LightLarge]
-                }
-                placeholder={
-                  isDark
-                    ? imageSprSchema2DarkPlaceholder
-                    : imageSprSchema2LightPlaceholder
-                }
-                alt="Configuration options for a component."
-                sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
-              />
-              <Image
-                className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? [imageSprSchema1Dark, imageSprSchema1DarkLarge]
-                    : [imageSprSchema1Light, imageSprSchema1LightLarge]
-                }
-                placeholder={
-                  isDark
-                    ? imageSprSchema1DarkPlaceholder
-                    : imageSprSchema1LightPlaceholder
-                }
-                alt="Configuration options for text."
-                sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
-              />
-            </div>
-          </ProjectSectionColumns>
-        </ProjectSection>
+
+        
         <ThemeProvider themeId="dark" data-invert>
           <Earth
             className={styles.earth}
@@ -368,19 +342,19 @@ export const SmartSparrow = () => {
                 },
                 {
                   position: [-0.24, 0.75, 0.24],
-                  text: 'Mantle',
+                  text: 'Insights',
                   delay: 800,
                   hidden: true,
                 },
                 {
                   position: [-0.24, 0.55, 0.24],
-                  text: 'Outer core',
+                  text: 'Data cleansing and analysis',
                   delay: 800,
                   hidden: true,
                 },
                 {
                   position: [-0.24, 0.35, 0.24],
-                  text: 'Inner core',
+                  text: 'Raw Data',
                   delay: 800,
                   hidden: true,
                 },
@@ -399,12 +373,14 @@ export const SmartSparrow = () => {
                 <ProjectSectionContent>
                   <ProjectTextRow center>
                     <ProjectSectionHeading>
-                      Next-generation learning experiences
+                    The globalization of data and the importance of visualizing it to empower business.
                     </ProjectSectionHeading>
                     <ProjectSectionText>
-                      The flexibility of the product allowed for developers to create
-                      engaging interactive experiences as highly configurable plugins that
-                      could then be used and manipulated by learning designers.
+                    In today's digital era, the volume of data generated by companies and individuals is growing exponentially. Data globalization is
+                    a phenomenon that has revolutionized the business world, allowing companies to collect, process and analyze information 
+                    from various sources around the world. In this part, we will discuss the importance of 
+                    visualizing data to empower business and why our company is the best choice to help 
+                    companies make the most of their data.
                     </ProjectSectionText>
                   </ProjectTextRow>
                 </ProjectSectionContent>
@@ -424,12 +400,14 @@ export const SmartSparrow = () => {
                 <ProjectSectionContent width="xl">
                   <ProjectTextRow justify="end" width="s">
                     <ProjectSectionHeading level={4} as="h3">
-                      Bringing 3D into learning
+                    The importance of data visualization
                     </ProjectSectionHeading>
                     <ProjectSectionText>
-                      One really cool example is the 3D screen plugin. Learning designers
-                      can load any model into it and then configure camera positions to
-                      animate to for each section.
+                    Data visualization is a process that involves graphically representing data in a way
+                    that is easy to understand. By visualizing data, companies can identify patterns, 
+                    trends and opportunities that might otherwise go unnoticed. Data visualization also 
+                    helps companies communicate their information clearly and effectively, which can be crucial 
+                    for making informed business decisions.
                     </ProjectSectionText>
                   </ProjectTextRow>
                 </ProjectSectionContent>
@@ -452,12 +430,13 @@ export const SmartSparrow = () => {
                 <ProjectSectionContent width="xl">
                   <ProjectTextRow justify="start" width="s">
                     <ProjectSectionHeading level={4} as="h3">
-                      Interactivity
+                    The importance of data globalization
                     </ProjectSectionHeading>
                     <ProjectSectionText>
-                      Learners can then be directed to specific parts of the model and
-                      shown labels. They’re also able to click and drag to orbit around
-                      and freely explore at any time.
+                    Data globalization allows companies to collect information from a variety of sources 
+                    around the world. This can include sales data, social media data, inventory data, 
+                    shipping data and many other types of data. By using data analytics techniques, 
+                    companies can identify patterns and trends in this data, enabling them to make informed business decisions.
                     </ProjectSectionText>
                   </ProjectTextRow>
                 </ProjectSectionContent>
@@ -480,18 +459,22 @@ export const SmartSparrow = () => {
               animations={['0:loop']}
               camera={[0.37, 1.02, 1.84]}
               meshes={['EarthPartial', 'Chunk']}
-              labels={['Mantle', 'Outer core', 'Inner core']}
+              labels={['Insights', 'Data cleansing and analysis', 'Raw Data']}
             >
               <ProjectSection>
                 <ProjectSectionContent width="xl">
                   <ProjectTextRow justify="end" width="s">
                     <ProjectSectionHeading level={4} as="h3">
-                      Animation
+                    Why our company is the best choice
                     </ProjectSectionHeading>
                     <ProjectSectionText>
-                      Learning designers can pick an animation included in the model to
-                      play or loop for any section without having to use any complex
-                      animation tools.
+                    At our company, we focus on helping companies get the most out of their data. We use advanced data analytics and data 
+                    visualization techniques to help companies identify patterns and trends in their data. Our expertise in data globalization 
+                    enables us to work with companies around the world and help them expand their reach and seize opportunities in new markets.
+                    </ProjectSectionText>
+                    <ProjectSectionText>
+                    In addition, we pride ourselves on our commitment to data security and privacy. We work closely with our clients to 
+                    ensure that their data is protected and used ethically and responsibly.
                     </ProjectSectionText>
                   </ProjectTextRow>
                 </ProjectSectionContent>
@@ -505,21 +488,7 @@ export const SmartSparrow = () => {
             />
           </Earth>
         </ThemeProvider>
-        <ProjectSection>
-          <ProjectSectionContent>
-            <ProjectTextRow center centerMobile noMargin>
-              <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
-              <ProjectSectionText>
-                Ultimately the project was successful after Smart Sparrow and the aero
-                platform were{' '}
-                <Link href="https://www.prnewswire.com/news-releases/pearson-acquires-interactive-learning-technology-from-smart-sparrow-300987673.html">
-                  acquired by Pearson in 2020
-                </Link>{' '}
-                to become a foundation for their next generation learning platform.
-              </ProjectSectionText>
-            </ProjectTextRow>
-          </ProjectSectionContent>
-        </ProjectSection>
+        
       </ProjectContainer>
       <Footer />
     </Fragment>

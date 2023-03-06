@@ -18,7 +18,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = ['using M.L.','via A.I.', 'of time series', 'of classification', 'of regression', 'of NLP','of dashboard'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -68,9 +68,8 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Designer + Developer"
-        description="Design portfolio of Hamish Williams — a product designer working on web & mobile
-          apps with a focus on motion, experience design, and accessibility."
+        title="Analytics"
+        description="We are a company specialized in data analysis to help other companies make better decisions."
       />
       <Intro
         id="intro"
@@ -83,13 +82,13 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
+        title="Transform data into strategic decisions"
+        description="Discover the hidden value in your data with our help. Visualize your data in a new and powerful way."
+        buttonText="Check it out"
         buttonLink="/projects/smart-sparrow"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'Dashboard construccion',
           textures: [
             {
               srcSet: [sprTexture, sprTextureLarge],
@@ -104,13 +103,13 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="Take your data with you"
+        description="Access your data analysis reports anytime, anywhere, right on your cell phone."
+        buttonText="Watch this"
+        buttonLink="/projects/volkihar-knight"
         model={{
           type: 'phone',
-          alt: 'App login screen',
+          alt: 'Mobile Dashboard',
           textures: [
             {
               srcSet: [gamestackTexture, gamestackTextureLarge],
@@ -128,9 +127,9 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="View project"
+        title="Get valuable insights from your data"
+        description="With our help, you will be able to extract, sort, analyze and present information effectively."
+        buttonText="Look at this"
         buttonLink="/projects/slice"
         model={{
           type: 'laptop',

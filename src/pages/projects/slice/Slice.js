@@ -40,10 +40,10 @@ import { Fragment } from 'react';
 import { media } from 'utils/style';
 import styles from './Slice.module.css';
 
-const title = 'Biomedical image collaboration';
+const title = 'The 5 key points for effective data analysis';
 const description =
-  'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
-const roles = ['User Research', 'UX Design', 'Interface Design'];
+  'The use of data analysis has become an essential tool for companies that want to better understand their business and make informed decisions. To conduct effective data analysis, it is important to follow a structured process. Below are the five key points for successful data analysis:';
+const roles = ['Data', 'Sorted', 'Arranged', 'Presented Visually', 'Storytelling'];
 
 export const Slice = () => {
   return (
@@ -59,7 +59,7 @@ export const Slice = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.best.edu.au/s/q2yjjvl7?data=8%404!9%4020303!10%40-15087&version=1"
+          // url="https://www.best.edu.au/s/q2yjjvl7?data=8%404!9%4020303!10%40-15087&version=1"
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -67,7 +67,7 @@ export const Slice = () => {
             <ProjectImage
               srcSet={[sliceApp, sliceAppLarge]}
               placeholder={sliceAppPlaceholder}
-              alt="The Slice web application showing a selected user annotation."
+              alt="We transform your data into tangible results."
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
             />
           </ProjectSectionContent>
@@ -75,16 +75,18 @@ export const Slice = () => {
         <ProjectSection>
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.imagesText}>
-              <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
+              <ProjectSectionHeading>1.- Data:</ProjectSectionHeading>
               <ProjectSectionText>
-                Teachers needed a better way to create collaborative group activities by
-                annotating slides on Slice. Before starting this project, a layer could
-                only be annotated by a single user, making it difficult for learners to
-                work together.
+              The first step in any data analysis is to collect relevant and reliable data. It is
+              important to ensure that the data is accurate and complete. If the data is not reliable,
+              any further analysis may be inaccurate or useless.
               </ProjectSectionText>
+              <ProjectSectionHeading></ProjectSectionHeading>
+              <ProjectSectionHeading>2.- Sorted:</ProjectSectionHeading>
               <ProjectSectionText>
-                Our solution was to allow users to be invited to a layer, where they can
-                see others’ annotations and make their own.
+              Once the data have been collected, it is important to organize and sort them in a way that 
+              makes them easy to analyze. This may involve removing irrelevant data, cleaning the data, 
+              and sorting it into meaningful categories.
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
@@ -92,14 +94,14 @@ export const Slice = () => {
                 className={styles.sidebarImage}
                 srcSet={[sliceSidebarLayers, sliceSidebarLayersLarge]}
                 placeholder={sliceSidebarLayersPlaceholder}
-                alt="The layers sidebar design, now with user profiles."
+                alt="Data turned into business intelligence"
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
               />
               <Image
                 className={styles.sidebarImage}
                 srcSet={[sliceSidebarAnnotations, sliceSidebarAnnotationsLarge]}
                 placeholder={sliceSidebarAnnotationsPlaceholder}
-                alt="Multiple user annotations on a shared layer."
+                alt="Discover the hidden value in your data with our help."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
               />
             </div>
@@ -108,20 +110,17 @@ export const Slice = () => {
         <ProjectSection light>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
+              <ProjectSectionHeading>3.- Arranged:</ProjectSectionHeading>
               <ProjectSectionText>
-                A problem we heard about often form users was that it was difficult to
-                find images they had previously seen or worked on. To solve this we added
-                a new tab that lists all previously annotated slides. In addition, we
-                added the ability to favorite slides, so if users find an interesting
-                slide they want to annotate later, they can easily save it to their
-                account.
+              Once the data are organized, it is important to carry out a more detailed analysis. This may 
+              involve applying statistical analysis techniques, creating graphs and tables to summarize the data, 
+              and identifying patterns and trends.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
               srcSet={[sliceSlides, sliceSlidesLarge]}
               placeholder={sliceSlidesPlaceholder}
-              alt="The new My Slides tab in slice, showing annotated and favorited slides."
+              alt="Visualize your data in a new and powerful way."
               sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
             />
           </ProjectSectionContent>
@@ -142,19 +141,17 @@ export const Slice = () => {
                 <Image
                   srcSet={[sliceAnnotation, sliceAnnotationLarge]}
                   placeholder={sliceAnnotationPlaceholder}
-                  alt="An annotation preview popover with statistics for shape perimeter and area."
+                  alt="We take your data and transform it into a compelling story."
                   sizes={`(max-width: ${media.mobile}px) 584px, (max-width: ${media.tablet}px) 747px, 556px`}
                 />
               </div>
             </div>
             <div className={styles.gridText}>
-              <ProjectSectionHeading>Meaningful details</ProjectSectionHeading>
+              <ProjectSectionHeading>4.- Presented visually:</ProjectSectionHeading>
               <ProjectSectionText>
-                Marking and annotating areas on high resolution biomedical images is the
-                core experience of the app, and it was easy to get lost or lose sense of
-                scale when zooming in on details. Adding measurements for the perimeter
-                and area of an annotation both helped to communicate the overall scale of
-                the image and how large the annotated feature is in comparison.
+              Data visualization is an important part of data analysis. Visual presentation can include graphs, 
+              maps, charts, diagrams, and other visual tools to help explain data clearly and concisely. Visual 
+              presentation can also help identify patterns and trends that may not be evident in the raw data.
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>
@@ -162,19 +159,17 @@ export const Slice = () => {
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
+              <ProjectSectionHeading>5.- Story Telling:</ProjectSectionHeading>
               <ProjectSectionText>
-                Real-time collaborative annotation facilitated better collaboration
-                between learners, and was much easier to run group exercises with the new
-                shared layers feature. Learners gave feedback that is was enjoyable to
-                work together and see what others were doing, and liked how interactive
-                and easy to use the application was.
+              Finally, data analysis must tell a clear and compelling story. Data alone is not enough; it is 
+              important to tell a coherent story that explains the data and its implications for the business. 
+              This may involve creating detailed reports, presentations and discussions with relevant stakeholders.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
               src={sliceIrl}
               placeholder={sliceIrlPlaceholder}
-              alt="Students at the University of New South Wales using the new collaborative annotation features"
+              alt="The power of data at your fingertips."
             />
           </ProjectSectionContent>
         </ProjectSection>

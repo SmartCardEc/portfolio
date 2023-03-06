@@ -18,19 +18,28 @@ import styles from './Profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+      <DecoderText text="About us" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      We are a team of skilled professionals who are passionate about transforming data
+      into valuable insights. Our team includes Mateo Heras and Juan Orellana, two
+      experienced economists who excel in the field of data analysis. Our combined
+      expertise in data analytics and visualization allows us to turn raw data into
+      actionable insights that can help our clients make informed decisions. On his{' '}
+      <Link href="https://www.linkedin.com/in/mateoheras/">LinkedIn</Link> profile, Mateo
+      showcases his skills and experience in data analysis, and his portfolio website,
+      available at <Link href="https://mateoheras77.github.io/WEB/">here</Link>,
+      demonstrates his ability to present complex data in an easy-to-understand format.
+      Juan's{' '}
+      <Link href="https://www.linkedin.com/in/juan-orellana-622689207/">LinkedIn</Link>{' '}
+      profile provides a glimpse into his skills and expertise in the field of economics
+      and data analysis.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+      Together, we form a dynamic team that excels in the field of data analytics. Our
+      ability to turn data into valuable insights has been instrumental in the success of
+      our clients, and we are proud to have helped many organizations make informed
+      decisions based on our work.
     </Text>
   </Fragment>
 );
@@ -59,10 +68,19 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 secondary
                 className={styles.button}
                 data-visible={visible}
-                href="/contact"
+                href="mailto:wmateohv@gmail.com"
                 icon="send"
               >
-                Send me a message
+                Send us a email: wmateohv@gmail.com
+              </Button>
+              <Button
+                secondary
+                className={styles.button}
+                data-visible={visible}
+                href="https://wa.me/+593979164305/?text=mas%20informacion%20aca"
+                icon="send"
+              >
+                Send us a message via whatsapp
               </Button>
             </div>
             <div className={styles.column}>

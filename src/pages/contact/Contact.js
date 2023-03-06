@@ -92,7 +92,7 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS, initDelay)}
               autoComplete="email"
-              label="Your Email"
+              label="Email: wmateohv@gmail.com"
               type="email"
               maxLength={512}
               {...email}
